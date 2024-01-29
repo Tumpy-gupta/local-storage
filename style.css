@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("https://www.shutterstock.com/image-vector/light-blue-white-background-260nw-1387003745.jpg"); */
+    background-size: cover;
+    background-color: blue;
+    height: 100vh;
+    font-family: Agbalumo;
+    transition: background-color 0.3s; 
+}
+
+.container {
+    padding: 50px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90vh;
+    box-shadow: 2px 1px 10px 10px rgb(0, 0, 0);
+    background-color: rgba(197, 193, 193, 0.8); 
+    transition: transform 0.3s; 
+    transform: scale(1);
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center; /* Centered text */
+}
+
+#text {
+    padding: 10px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 10px;
+    transition: transform 0.3s; 
+    transform: scale(1);
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 60px;
+    border: 2px solid rgb(0, 0, 0);
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    transform: scale(1);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    transform: scale(1.1); /* Added scale on hover for a cool effect */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Added scale on hover for a cool effect */
+    background-color: rgba(255, 255, 255, 0.9); /* Adjusted background color on hover */
+}
+
+#text:hover {
+    transform: scale(1.05); /* Added scale on hover for a cool effect */
+}
